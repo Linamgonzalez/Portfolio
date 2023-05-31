@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,inicial-scale=1.0">
+        <title>Responsive Portfolio Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Portfolio</a>
+            <div class="menuToggle"></div>
+            <ul class="nav">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <section id="home">
+            <div class="content">
+                <h2>Lina González</h2>
+                <p>Hi! I'm Lina, an enthusiastic developer with experience in HTML, CSS, and JavaScript. During my apprenticeship and internship in programming, I have had the opportunity to work on exciting projects that have strengthened my technical skills and my ability to create interactive solutions.</p>
+                <a href="#" class="btn">Contact Me</a>
+            </div>
+            <img src="FotoLinaPortafolio.png" class="men">
+        </section>
+        <section id="services">
+            <div class="secText">
+                <h2>What I Am Great At</h2>
+                <p>I have participated in password creation projects, where I have implemented secure password generation and validation systems, thus ensuring the protection of sensitive information. In addition, I have collaborated in the construction of search engines, using data filtering and sorting techniques to provide users with a fast and efficient search experience. Another aspect I have worked on is the implementation of progress bars, allowing us to visualize the progress in tasks or processes. Using HTML, CSS, and JavaScript, I have created dynamic and customizable progress bars, which provide a clear visual representation of the current status.</p>
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                    <img src="htmlicon.png">
+                    <h3>Lenguaje HTML</h3>
+                </div> 
+                <div class="servicesBx">
+                    <img src="cssicon.png">
+                    <h3>CSS Style</h3>
+                </div> 
+                <div class="servicesBx">
+                    <img src="jsicon.png">
+                    <h3>JavaScript</h3>
+                </div> 
+                <div class="servicesBx">
+                    <img src="developmenticon.png">
+                    <h3>Website</h3>
+                </div> 
+            </div>   
+            <div class="center">
+                <a href="#" class="btn">Hire Me</a>
+            </div>           
+        </section> 
+        <section id="portfolio">
+            <div class="secText">
+                <h2>My Masterpiece Collection</h2>
+                <p>These projects have allowed me to solidify my understanding of fundamental web concepts and improve my front-end development skills. I am excited to continue learning and expanding my knowledge in the programming field. Being passionate about creating interactive and functional experiences, I would love to continue collaborating on challenging projects and continue to grow as a developer. I am open to new opportunities and eager to apply my skills to tackle upcoming challenges.</p>
+            </div>
+            <div class="content">
+                <div class="imgBx">
+                    <img src="website_html.jpeg">
+                </div>
+                <div class="imgBx">
+                    <img src="website_css.jpeg">
+                </div>
+                <div class="imgBx">
+                    <img src="BarraProgreso.jpeg">
+                </div>
+                <div class="imgBx">
+                    <img src="SearchGithub.jpeg">
+                </div>
+                <div class="imgBx">
+                    <img src="passwordGeneretor.jpeg">
+                </div>
+                <div class="imgBx">
+                    <img src="portfolio.jpeg">
+                </div>
+            </div>
+            <div class="center">
+                <a href="#" class="btn">View More</a>
+            </div>   
+        </section>
+        <section id="contact">
+        <div class="secText">
+            <h2>Ways To Contact Me</h2>
+            <p>Don't hesitate to contact me if you want to know more about my projects or explore possible collaborations! I am available at:</p>
+        </div>
+        <div class="content">
+            <a href="#">
+                <ion-icon name="mail-outline"></ion-icon>                linagonzalez.adm@gmail.com
+            </a>
+            <a href="#">
+                <ion-icon name="call-outline"></ion-icon>+57 310 891 1305
+            </a>
+            <a href="#">
+                <ion-icon name="logo-skype"></ion-icon>skype
+            </a>
+            <a href="#">
+                <ion-icon name="logo-whatsapp"></ion-icon>whatsapp
+            </a>
+        </div>
+        <div class="center">
+            <p class="copyrights">Copyrights © 2023 <a href="#">Online Tutorials</a>. All Right Reserved</p>
+        </div>
+        </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let list = document.querySelectorAll('.nav li');
+        function active(){
+            list.forEach((i) =>
+            i.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((i) =>
+        i.addEventListener('click',active));
+
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+    </script>
+    </body>
+</html>
