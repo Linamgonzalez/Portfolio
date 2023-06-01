@@ -380,16 +380,16 @@ header.active ul li {
 @media (max-width: 700px) {
 
 #home .content h2{
-    font-size: 3em;
+    font-size: 2em;
 }
 #home::before {
-    width: 80vw;
-    height: 40vw;
+    width: 60vw;
+    height: 30vw;
     border-top-right-radius: 80vw;
     border-top-left-radius: 80vw;
 }
 #home .men {
-    height: 40vh;
+    height: 30vh;
 }
 
 #services .content,
@@ -399,6 +399,6 @@ header.active ul li {
 }
 
 #contact .content a {
-    height: 80px;
+    height: 60px;
 }
 }
